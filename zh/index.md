@@ -1,13 +1,67 @@
-# It works! ;-)
+# 立身中正、舍己从人，养浩然之气！
 
 
-## Section 1
+## 2019
+### 1月
+[20190115【生命⋅修行】自大到崩溃的边缘（五十五）](pages/writing/20190115【生命⋅修行】自大到崩溃的边缘（五十五）.md)
+[20190114【生命⋅修行】被封印的生命力（五十四）](pages/writing/20190114【生命⋅修行】被封印的生命力（五十四）.md)
+[20190113【随笔】无法偷闲的下午（五十三）](pages/writing/20190113【随笔】无法偷闲的下午（五十三）.md)
+[20190112【随笔】眼前飞舞的黑影（五十二）](pages/writing/20190112【随笔】眼前飞舞的黑影（五十二）.md)
+[20190111【区块链】在GitHub上部署MDWiki（五十一）](pages/writing/20190111【区块链】在GitHub上部署MDWiki（五十一）.md)
+[20190110【生命⋅修行】不必勉强而为（五十）](pages/writing/20190110【生命⋅修行】不必勉强而为（五十）.md)
+[20190109【随笔】严重退化的IT技能（四十九）](pages/writing/20190109【随笔】严重退化的IT技能（四十九）.md)
+[20190108【区块链】在IPFS上发表文章（四十八）](pages/writing/20190108【区块链】在IPFS上发表文章（四十八）.md)
+[20190106【生命⋅修行】管用的咒语（四十七）](pages/writing/20190106【生命⋅修行】管用的咒语（四十七）.md)
+[20190105【生命⋅修行】初心（四十六）](pages/writing/20190105【生命⋅修行】初心（四十六）.md)
+[20190104【生命⋅修行】情绪真是一个难以控制的东西（四十五）](pages/writing/20190104【生命⋅修行】情绪真是一个难以控制的东西（四十五）.md)
+[20190103【创业】用户注册了，然后呢？（四十四）](pages/writing/20190103【创业】用户注册了，然后呢？（四十四）.md)
+[20190102【生命⋅修行】那些"应该"的压力（四十三）](pages/writing/20190102【生命⋅修行】那些"应该"的压力（四十三）.md)
+[20190102【生命⋅修行】那些"应该"的压力（四十三）](pages/writing/20190102【生命⋅修行】那些"应该"的压力（四十三）.md)
+[20190101【随笔】小宝宝的神奇判断（四十二）](pages/writing/20190101【随笔】小宝宝的神奇判断（四十二）.md)
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+## 2018
+### 12月
+[20181231【随笔】美好的跨年聚餐（四十一）](pages/writing/20181231【随笔】美好的跨年聚餐（四十一）.md)
+[20181230【随笔】超值的理发体验（四十）](pages/writing/20181230【随笔】超值的理发体验（四十）.md)
+[20181229【生命⋅修行】问题⋅注意力⋅现实（三十九）](pages/writing/20181229【生命⋅修行】问题⋅注意力⋅现实（三十九）.md)
+[20181228【创业】Facebook的广告初探（三十八）](pages/writing/20181228【创业】Facebook的广告初探（三十八）.md)
+[20181227【生命⋅修行】天使与魔鬼的战争（三十七）](pages/writing/20181227【生命⋅修行】天使与魔鬼的战争（三十七）.md)
+[20181226【随笔】花开的声音（三十六）](pages/writing/20181226【随笔】花开的声音（三十六）.md)
+[20181225【生命⋅修行】关注那些行之有效的事情（三十五）](pages/writing/20181225【生命⋅修行】关注那些行之有效的事情（三十五）.md)
+[20181224【生命⋅修行】清洁是一种修行（三十四）](pages/writing/20181224【生命⋅修行】清洁是一种修行（三十四）.md)
+[20181223【生命⋅修行】一阳来复（三十三）](pages/writing/20181223【生命⋅修行】一阳来复（三十三）.md)
+[20181222【随笔】多了一个儿子（三十二）](pages/writing/20181222【随笔】多了一个儿子（三十二）.md)
+[20181221【生命⋅修行】只是觉察就够了吗（三十一）](pages/writing/20181221【生命⋅修行】只是觉察就够了吗（三十一）.md)
+[20181220【生命⋅修行】我唯一的要求就是：你要做你自己！](pages/writing/20181220【生命⋅修行】我唯一的要求就是：你要做你自己！.md)
+[20181219【区块链】IPFS初探之安装试玩（二十九）](pages/writing/20181219【区块链】IPFS初探之安装试玩（二十九）.md)
+[20181218【区块链】IPFS初探（二十八）](pages/writing/20181218【区块链】IPFS初探（二十八）.md)
+[20181217【随笔】没什么阴云可以永远遮住阳光（二十七）](pages/writing/20181217【随笔】没什么阴云可以永远遮住阳光（二十七）.md)
+[20181216【随笔】当效法东坡日取150钱度日（二十六）](pages/writing/20181216【随笔】当效法东坡日取150钱度日（二十六）.md)
+[20181215【随笔】寒冷的冬天缺少一堆🔥（二十五）](pages/writing/20181215【随笔】寒冷的冬天缺少一堆🔥（二十五）.md)
+[20181214【生命⋅修行】愚者佩之（二十四）](pages/writing/20181214【生命⋅修行】愚者佩之（二十四）.md)
+[20181213【区块链】面向久远将来的信息架构（二十三）](pages/writing/20181213【区块链】面向久远将来的信息架构（二十三）.md)
+[20181212【生命⋅修行】本自俱足（二十二）](pages/writing/20181212【生命⋅修行】本自俱足（二十二）.md)
+[20181211【生命⋅修行】从今往后（二十一）](pages/writing/20181211【生命⋅修行】从今往后（二十一）.md)
+[20181210【生命⋅修行】活着时每一瞬间都是你的（二十）](pages/writing/20181210【生命⋅修行】活着时每一瞬间都是你的（二十）.md)
+[20181209【生命⋅修行】难寻个稳当快乐处（十九）](pages/writing/20181209【生命⋅修行】难寻个稳当快乐处（十九）.md)
+[20181208【生命⋅修行】生命如果结束了会怎样（十八）](pages/writing/20181208【生命⋅修行】生命如果结束了会怎样（十八）.md)
+[20181207【随笔】睡不着是因为咖啡吗（十七）](pages/writing/20181207【随笔】睡不着是因为咖啡吗（十七）.md)
+[20181206【创业】一个能哗哗卖的产品服务系统（十六）](pages/writing/20181206【创业】一个能哗哗卖的产品服务系统（十六）.md)
+[20181205【创业】不熟不做、做必入坑（十五）  ](pages/writing/20181205【创业】不熟不做、做必入坑（十五）  .md)
+[20181204【生命⋅修行】无常才是平常（十四）  ](pages/writing/20181204【生命⋅修行】无常才是平常（十四）  .md)
+[20181203【随笔】凌晨一点的深圳（十三）](pages/writing/20181203【随笔】凌晨一点的深圳（十三）.md)
+[20181202【随笔】朱砂扣（十二） ](pages/writing/20181202【随笔】朱砂扣（十二） .md)
+[20181201【生命⋅修行】72个借口（十一）  ](pages/writing/20181201【生命⋅修行】72个借口（十一）  .md)
 
+### 11月
+[20181130【随笔】查理⋅卓别林的诗（十）  ](pages/writing/20181130【随笔】查理⋅卓别林的诗（十）  .md)
+[20181129【生命⋅修行】生命力是被“爱”卡住了吗？（九）    ](pages/writing/20181129【生命⋅修行】生命力是被“爱”卡住了吗？（九）    .md)
+[20181128【随笔】参天大树带来的生活气息（八）  ](pages/writing/20181128【随笔】参天大树带来的生活气息（八）  .md)
+[20181127【区块链】什么是货币（七）  ](pages/writing/20181127【区块链】什么是货币（七）  .md)
+[20181126【生命⋅修行】在看得见的地方好好用功（六）  ](pages/writing/20181126【生命⋅修行】在看得见的地方好好用功（六）  .md)
+[20181125【生命⋅修行】打破常轨的冲动（五）    ](pages/writing/20181125【生命⋅修行】打破常轨的冲动（五）    .md)
+[20181124【随笔】周末是个挑战（四）  ](pages/writing/20181124【随笔】周末是个挑战（四）  .md)
+[20181123【生命⋅修行】知止（三）  ](pages/writing/20181123【生命⋅修行】知止（三）  .md)
+[20181122【生命⋅修行】生命至此、修行好像已经画了一个圈（二）  ](pages/writing/20181122【生命⋅修行】生命至此、修行好像已经画了一个圈（二）  .md)
+[20181121【随笔】开始一次新的尝试（一）  ](pages/writing/20181121【随笔】开始一次新的尝试（一）  .md)
 
-## Section 2
-
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
-Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.

@@ -3,7 +3,7 @@
   -- Do NOT remove the leading `#` character.
   -->
 
-# Your wiki name
+# 浩然文集
 
 
 <!--
@@ -19,8 +19,10 @@
   -- (Read: http://dynalon.github.io/mdwiki/#!quickstart.md#Adding_a_navigation)
   -->
 
-[About](pages/about.md)
-[Download](pages/download.md)
+[随笔](pages/随笔.md)
+[生命⋅修行](pages/生命⋅修行.md)
+[区块链](pages/区块链.md)
+[创业](pages/创业.md)
 
 <!-- A more complex navigation example: ----------------------------------------
 
