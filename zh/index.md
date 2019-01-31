@@ -1,6 +1,6 @@
 # 立身中正、舍己从人，养浩然之气！
 
->[这里就是正做广告的销售页面](https://www.homingsystems.com/website/new_register/?code=DAVID)
+>[这里就是正做广告的销售页面，想要在全世界任何地方看Netflix，点这里：）](https://www.homingsystems.com/website/new_register/?code=DAVID)
 ## 2019
 ### 1月
 [20190131【生命⋅修行】再论初心（七十）](pages/writing/20190131【生命⋅修行】再论初心（七十）.md)
