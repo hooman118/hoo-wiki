@@ -6,6 +6,7 @@
 
 ## 2019
 ### 3月
+[20190321【随笔】阿宝宝发烧了（一百一十五）](pages/writing/20190321【随笔】阿宝宝发烧了（一百一十五）.md)
 [20190320【创业】Facebook广告Scale之难题（一百一十四）](pages/writing/20190320【创业】Facebook广告Scale之难题（一百一十四）.md)
 [20190319【创业】Facebook广告之Instant Experience（一百一十三）](pages/writing/20190319【创业】Facebook广告之Instant Experience（一百一十三）.md)
 [20190318【随笔】最重要的是什么呢（一百一十二）](pages/writing/20190318【随笔】最重要的是什么呢（一百一十二）.md)
