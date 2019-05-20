@@ -6,6 +6,10 @@
 
 ## 2019
 ### 5月
+[20190519【随笔】一路向南一路烟（一百七十一）](pages/writing/20190519【随笔】一路向南一路烟（一百七十一）.md)
+[20190518【随笔】梦如人生（一百七十）](writing/20190518【随笔】梦如人生（一百七十）.md)
+[20190517【区块链】安装试用Jupyter Lab（一百六十九）](pages/writing/20190517【区块链】安装试用Jupyter Lab（一百六十九）.md)
+[20190516【创业】每一个CMO都想问Google的7个问题（一百六十八）](pages/writing/20190516【创业】每一个CMO都想问Google的7个问题（一百六十八）.md)
 [20190515【创业】Google Shopping Ads的小坑（一百六十七）](pages/writing/20190515【创业】Google Shopping Ads的小坑（一百六十七）.md)
 [20190514【创业】准备开始尝试Google Shopping Ads（一百六十六）](pages/writing/20190514【创业】准备开始尝试Google Shopping Ads（一百六十六）.md)
 [20190513【随笔】每天写三千字的可能性（一百六十五）](pages/writing/20190513【随笔】每天写三千字的可能性（一百六十五）.md)
