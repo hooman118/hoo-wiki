@@ -1,3 +1,5 @@
+# 20190523【生命⋅修行】ap·pre·ci·ate（一百七十五）
+
 ###ap·pre·ci·ate
 
 */əˈprēSHēˌāt/*
@@ -70,4 +72,3 @@ verb: **appreciate**; 3rd person present: **appreciates**; past tense: **appreci
 > * 而且，自己还可以期待、计划着更多更多
 
 比如，期望着一条来自大宝的消息...
-
