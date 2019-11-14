@@ -53,7 +53,7 @@ pip3 install --user jupyterlab
 export PATH="$PATH:/usr/local/mysql/bin:/Users/Hooman/Library/Python/3.7/bin"
 ```
 
-然后在ipynb所在的目录，执行 `jupiter lab`，会自动打开一个浏览器。接下来，就可以直接看书了。我还照着[Jupyterlab 的安装与配置](https://github.com/selfteaching/the-craft-of-selfteaching/blob/master/T-appendix.jupyter-installation-and-setup.ipynb)里关于*Jupyter Lab Theme*的章节调整了显示主题（直接使用支持 [Stylus](https://github.com/openstyles/stylus) 这类终端 CSS 定制插件的浏览器）。后来，又安装了两个小插件（并不重要）。
+然后在ipynb所在的目录，执行 `jupyter lab`，会自动打开一个浏览器。接下来，就可以直接看书了。我还照着[Jupyterlab 的安装与配置](https://github.com/selfteaching/the-craft-of-selfteaching/blob/master/T-appendix.jupyter-installation-and-setup.ipynb)里关于*Jupyter Lab Theme*的章节调整了显示主题（直接使用支持 [Stylus](https://github.com/openstyles/stylus) 这类终端 CSS 定制插件的浏览器）。后来，又安装了两个小插件（并不重要）。
 
 ###Jupyter Lab超级小白的困惑
 
