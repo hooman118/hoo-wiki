@@ -23,6 +23,7 @@
 [生命⋅修行](pages/生命⋅修行.md)
 [区块链](pages/区块链.md)
 [创业](pages/创业.md)
+[教程](pages/教程.md)
 [我的简书](https://www.jianshu.com/u/0f2c2131d6af)
 
 <!-- A more complex navigation example: ----------------------------------------
