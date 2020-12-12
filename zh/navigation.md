@@ -25,6 +25,7 @@
 [创业](pages/创业.md)
 [教程](pages/教程.md)
 [我的简书](https://www.jianshu.com/u/0f2c2131d6af)
+[我的新作](https://zuopin.xin/authors/a05c14ba57e44ca1578f15ef02f59ba6edb6cb6b)
 
 <!-- A more complex navigation example: ----------------------------------------
 
