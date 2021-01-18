@@ -6,4 +6,4 @@ rely on the activites that you seem to naturally and automatically know the step
 
 Find more ways to incorporate activites that provide moments of unconscious excellence, moments when you thought, "How did I do that?".
 
-Appreciate the things that give you energy or enjoyment, either while doing them or immediately after finishing them. These are the activites that make you think "When can I do that again?"oo8ooojj
+Appreciate the things that give you energy or enjoyment, either while doing them or immediately after finishing them. These are the activites that make you think "When can I do that again?"
