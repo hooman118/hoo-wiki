@@ -1,3 +1,39 @@
+hi David! so you're having concerns with customer complaint about being charged twice?
+
+7:19 David Liu: hello
+
+7:19 David Liu: ye s
+
+7:19 David Liu: yes
+
+7:19 Philip (Support Advisor): i see. could you please provide me the order number?
+
+7:21 David Liu: 1077
+
+7:22 Philip (Support Advisor): thanks! let me just check the order here. :)
+
+7:23 Philip (Support Advisor): actually, the order only shows one charge so it's possible that the other charge that they are seeing are the pending authorization.
+
+7:25 Philip (Support Advisor): sometimes certain banks will show a charge twice - once as a charge, and once as an authorization.
+
+7:25 Philip (Support Advisor): so the customer doesn't have to worry because only once of those charge would only push through. :)
+
+7:26 David Liu: Got it. Thanks a lot!
+
+7:26 Philip (Support Advisor): You are very much welcome! I am glad to have helped you today. In any case, you'll receive a feedback form at the end of our chat today, you can use that to reply to me directly with anything else you may need support with. :)
+
+7:27 David Liu: ok. got it. Thank you very much
+
+7:27 Philip (Support Advisor): no worries! have a good one :)
+
+7:27 David Liu: bye
+
+7:27 Philip (Support Advisor): thanks! bye for now. :)
+
+7:28 System: Chat ended by agent
+
+
+
 Sorry to message you so early. This is David@budwalless.com. I was checking the voicemail last night. You leave me a message about how to buy the earpiece for your phone. Any question, feel free to email me.
 
 ==========================================================================[]'
