@@ -2,7 +2,7 @@
 A7XSYY-VCFZ24-WABHTB-N5SZQN-RZ38C8
 ```
 
-
+https://shop.budwalless.com/discount/2021VIP?redirect=/products/budwalless-tws-j5anc/
 
 hi David! so you're having concerns with customer complaint about being charged twice?
 
