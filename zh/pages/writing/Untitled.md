@@ -1,3 +1,15 @@
+Add one more pair of {{product_title}} to your order now!
+
+Buy one more pair of {{product_title}} at the special bundled price. For your beloved families and friends.
+
+[b]Add extra pair of earbuds to your order now for only half the price.[/b]
+
+Buy one more pair of earbuds for only half the price. For you beloved families and friends.
+
+**Wait! Missed the Special Offer just now?**
+
+Maybe, Your beloved families or best friends are also wanna one pair of these earbuds. Get one more now at half the price.
+
 ```
 A7XSYY-VCFZ24-WABHTB-N5SZQN-RZ38C8
 ```
