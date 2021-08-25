@@ -4,6 +4,8 @@
 
 幸福——格局大小，格局大则自然轻松
 
+幸福——人民日报
+
 Add one more pair of {{product_title}} to your order now!
 
 Buy one more pair of {{product_title}} at the special bundled price. For your beloved families and friends.
