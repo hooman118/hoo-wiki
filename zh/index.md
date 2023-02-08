@@ -1,7 +1,9 @@
 # 立身中正、舍己从人，养浩然之气！
 ## 2023
 ### 2月
-[20230206【随笔】火爆的 ChatGPT.md](pages/writing/20230206【随笔】火爆的 ChatGPT.md)
+[20230208【随笔】继续聊聊ChatGPT.md](pages/writing/20230208【随笔】继续聊聊ChatGPT.md)
+[20230207【生命⋅修行】更深入地了解自己.md](pages/writing/20230207【生命⋅修行】更深入地了解自己.md)
+[20230206【随笔】火爆的ChatGPT.md](pages/writing/20230206【随笔】火爆的ChatGPT.md)
 [20230205【区块链】什么是区块链（十二）.md](pages/writing/20230205【区块链】什么是区块链（十二）.md)
 [20230204【生命⋅修行】生命的真相.md](pages/writing/20230204【生命⋅修行】生命的真相.md)
 [20230203【区块链】NoStr 怎么就火了.md](pages/writing/20230203【区块链】NoStr 怎么就火了.md)
