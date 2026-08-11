@@ -102,3 +102,7 @@ sftp-config.json
 
 # Notepad++ backups #
 *.bak
+
+# Environment / API Keys
+.env
+.env.local

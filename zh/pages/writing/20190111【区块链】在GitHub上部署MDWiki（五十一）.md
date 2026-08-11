@@ -1,12 +1,14 @@
-#【区块链】在GitHub上部署MDWiki（五十一）
+# 【区块链】在GitHub上部署MDWiki（五十一）
 
 > 严格来说，MDWiki和区块链没关系，GitHub当然也没有，其实IPFS也可以和区块链没关系。只是暂时都归入这个类别吧，毕竟是因为区块链才开始深入了解这些东西。
+
+![DALL·E 2024-01-11 12.07.13 - Create a wide-screen, photo-realistic image of a hand holding a Montblanc pen, writing on a notebook. The focus should be on the hand with the pen poi](DALL·E 2024-01-11 12.07.13 - Create a wide-screen, photo-realistic image of a hand holding a Montblanc pen, writing on a notebook. The focus should be on the hand with the pen poi.png)
 
 为了在IPFS上发表文章，我找到了MDWiki这个接近目标的开源方案。然后发现，其实只要完成在GitHub上部署MDWiki，就已经可以公开发表文章了。
 
 MDWiki的网站上有一份[不完全指导](http://dynalon.github.io/mdwiki/#!tutorials/github.md)，照着做了才知道，自己对于GitHub有多么的无知！以下就是
 
-##仍然可能不完整的具体步骤
+## 仍然可能不完整的具体步骤
 
 ### 第一步：创建GitHub账号
 
@@ -147,3 +149,19 @@ git checkout the-one
 [^2]: https://help.github.com/articles/caching-your-github-password-in-git/
 [^3]: https://guides.github.com/introduction/git-handbook/ 
 [^4]: <https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee825488(v=cs.20)>
+
+
+
+2019.01.11
+
+----
+
+
+
+5年了，并没有把这个工具进一步优化顺手。Github会偶尔同步，后来改成了用Key登录，再后来还写了自动化生成索引的脚本。
+
+目前，偶尔会想，Typora怎么样才能继承AI辅助文字的写作呢？像Github Coplilot或Notion AI那样？
+
+
+
+2024.01.11

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现代金本位：1975-2025年资产价值的五十年分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background-color: #1A202C;
+            color: #F7FAFC;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 500px;
+            height: 60vh;
+        }
+        .small-chart-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 1.25rem;
+            left: -0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #4299E1;
+            border-radius: 9999px;
+            border: 2px solid #2D3748;
+        }
+        .timeline-line {
+            position: absolute;
+            top: 1.25rem;
+            left: -1px;
+            bottom: 0;
+            width: 2px;
+            background-color: #4A5568;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-8 md:my-16">
+            <h1 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500 mb-4">现代金本位</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">自1971年以来，法定货币的价值不断波动。为了真正理解资产的表现，我们必须使用一个永恒的标尺：黄金。这份报告将揭示五十年来，以黄金计价的真实价值变迁。</p>
+        </header>
+
+        <section id="timeline" class="my-12 md:my-20">
+            <h2 class="text-3xl font-bold text-center mb-12">演变中的全球经济：五十年宏观叙事</h2>
+            <div class="relative max-w-3xl mx-auto pl-8">
+                <div class="timeline-line"></div>
+                <div class="timeline-item relative pb-12">
+                    <h3 class="text-xl font-bold text-blue-400">1975-1981: 大通胀与滞胀</h3>
+                    <p class="text-gray-400 mt-2">布雷顿森林体系崩溃后，高通胀与经济停滞并存，地缘政治危机频发，资本涌入黄金等硬资产寻求避险。</p>
+                </div>
+                <div class="timeline-item relative pb-12">
+                    <h3 class="text-xl font-bold text-blue-400">1982-1999: 沃尔克通缩与大缓和</h3>
+                    <p class="text-gray-400 mt-2">美联储激进加息成功遏制通胀，开启了近二十年的稳定增长期。资本从黄金流向高收益的美元和股票，金融资产迎来大牛市。</p>
+                </div>
+                <div class="timeline-item relative pb-12">
+                    <h3 class="text-xl font-bold text-blue-400">2000-2008: 商品超级周期</h3>
+                    <p class="text-gray-400 mt-2">中国的崛起引发了对原材料的巨大需求，开启了“大宗商品超级周期”，铜、石油等价格创下历史新高。</p>
+                </div>
+                 <div class="timeline-item relative pb-12">
+                    <h3 class="text-xl font-bold text-blue-400">2009-2021: 非常规货币政策</h3>
+                    <p class="text-gray-400 mt-2">全球金融危机后，央行实施零利率和量化宽松，催生“万物皆涨”局面，股票和黄金价格均被推高。</p>
+                </div>
+                <div class="timeline-item relative">
+                    <h3 class="text-xl font-bold text-blue-400">2022-2025: 新通胀范式</h3>
+                    <p class="text-gray-400 mt-2">高通胀回归，地缘政治分裂加剧。“绿色转型”和“再军事化”为铜等关键商品创造了新的结构性需求。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-chart" class="my-12 md:my-24 bg-gray-800 rounded-xl shadow-2xl p-4 md:p-8">
+            <h2 class="text-3xl font-bold text-center mb-2">资产的真实价值：以黄金计价的价格趋势 (1975-2025)</h2>
+            <p class="text-center text-gray-400 mb-8">下图以对数标尺展示了各类资产的真实价值。它剥离了货币通胀的幻象，揭示了实体经济与金融资产之间的宏大周期轮动。</p>
+            <div class="chart-container">
+                <canvas id="goldPricedAssetsChart"></canvas>
+            </div>
+        </section>
+
+        <section id="deep-dive" class="my-12 md:my-24">
+            <h2 class="text-3xl font-bold text-center mb-12">各类资产深度剖析</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-400 mb-4">能源与地缘政治：石油</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">石油的黄金价格是地缘政治风险的脉搏。其价值波动由地缘政治冲突、货币政策和供给变革共同驱动，呈现“短期脉冲”与“长期压制”交替的模式。</p>
+                    <div class="small-chart-container">
+                        <canvas id="oilChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">全球工业引擎：铜</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">“铜博士”是全球工业健康的晴雨表。其需求驱动正从中国建筑业转向能源转型和AI，预示着其在现代经济中日益增强的关键地位。</p>
+                    <div class="small-chart-container">
+                        <canvas id="copperChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">生命之本：小麦</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">小麦的真实价值长期下降，这清晰地展示了技术进步带来的生产力飞跃。可大量生产的消费品相对于稀缺的货币金属必然贬值。</p>
+                    <div class="small-chart-container">
+                        <canvas id="wheatChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">金融资本 vs. 硬通货：标普500</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">标普500/黄金比率是市场对货币体系信心的终极指标。其波峰与波谷标志着主要货币范式的转折点，反映了资本在风险与避险间的博弈。</p>
+                    <div class="small-chart-container">
+                        <canvas id="sp500Chart"></canvas>
+                    </div>
+                </div>
+​            </div>
+​        </section>
+​        
+        <section id="conclusion" class="my-12 md:my-24">
+            <h2 class="text-3xl font-bold text-center mb-12">综合分析与战略启示</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="text-5xl mb-4">🔄</div>
+                    <h3 class="text-xl font-bold mb-2">资产周期轮动</h3>
+                    <p class="text-gray-400">实体商品和金融资产在不同宏观环境下表现各异。通胀期利好商品，稳定期利好金融。</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-2">黄金的稳定锚</h3>
+                    <p class="text-gray-400">在法定货币购买力被侵蚀的背景下，黄金是滤除噪音、衡量真实价值的可靠基准和终极避险工具。</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="text-5xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold mb-2">平衡投资策略</h3>
+                    <p class="text-gray-400">稳健的长期策略需要在生产性资产（股票）和货币性对冲资产（黄金）之间动态平衡。</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-500 py-8">
+            <p>数据来源：报告《现代金本位：1975-2025年资产价值的五十年分析》。</p>
+            <p>基于提供的分析报告生成。仅供参考。</p>
+        </footer>
+
+​    </div>
+
+    <script>
+        const data = {
+            years: [1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+            oilPerGold: [21.11, 14.97, 17.38, 21.89, 25.29, 28.11, 14.1, 13.16, 16.09, 13.84, 13.31, 29.58, 29.12, 33.93, 24.01, 19.06, 21.71, 21.47, 24.56, 29.16, 26.18, 20.92, 19.11, 27.14, 18.07, 10.33, 12.34, 13.85, 13.34, 11.38, 8.89, 10.25, 10.62, 9.29, 17.45, 16.49, 16.4, 17.75, 14.63, 14.32, 26.7, 32.58, 26.61, 20.58, 25.67, 49.53, 27.3, 18.95, 25.4, 32.4, 46.15],
+            copperPerGold: [286.45, 190.45, 244.18, 312.38, 360.65, 620.16, 561.98, 561.36, 574.52, 577.61, 525.95, 593.92, 585.83, 400.19, 309.04, 333.83, 345.13, 333.23, 423.2, 359.48, 288.54, 371.39, 320.0, 392.25, 384.38, 329.38, 371.41, 434.53, 453.86, 317.68, 275.45, 199.85, 218.17, 283.03, 414.62, 357.78, 391.99, 465.33, 418.0, 403.94, 462.63, 568.17, 451.72, 431.95, 516.67, 637.38, 422.81, 449.74, 504.83, 568.61, 681.65],
+            wheatPerGold: [45.19, 45.34, 63.93, 66.26, 84.47, 152.32, 121.84, 109.02, 119.49, 105.64, 104.17, 152.16, 175.52, 116.18, 102.18, 147.09, 119.65, 105.93, 111.64, 111.49, 84.34, 89.83, 97.44, 111.02, 113.15, 105.6, 97.53, 87.88, 108.13, 120.53, 131.28, 143.55, 108.75, 129.82, 201.78, 215.92, 216.57, 216.19, 203.72, 209.72, 235.57, 321.33, 268.93, 245.27, 306.84, 353.4, 235.0, 203.73, 280.7, 435.73, null],
+            sp500PerGold: [0.54, 0.82, 0.66, 0.49, 0.32, 0.2, 0.28, 0.32, 0.38, 0.45, 0.58, 0.64, 0.64, 0.61, 0.85, 0.87, 1.05, 1.21, 1.24, 1.2, 1.41, 1.74, 2.65, 3.69, 4.73, 5.16, 4.4, 3.18, 2.63, 2.76, 2.69, 2.14, 2.09, 1.39, 0.96, 0.93, 0.81, 0.82, 1.17, 1.54, 1.79, 1.68, 1.93, 2.17, 2.07, 1.8, 2.38, 2.28, 2.19, 2.26, 1.87]
+        };
+
+​        const chartTooltipCallback = {
+​            plugins: {
+​                tooltip: {
+​                    callbacks: {
+​                        title: function(tooltipItems) {
+​                            const item = tooltipItems[0];
+​                            let label = item.chart.data.labels[item.dataIndex];
+​                            if (Array.isArray(label)) {
+​                              return label.join(' ');
+​                            }
+​                            return label;
+​                        }
+​                    }
+​                },
+​                legend: {
+​                    labels: {
+​                        color: '#CBD5E0'
+​                    }
+​                }
+​            },
+​            scales: {
+​                y: {
+​                    ticks: { color: '#A0AEC0' },
+​                    grid: { color: '#2D3748' }
+​                },
+​                x: {
+​                    ticks: { color: '#A0AEC0' },
+​                    grid: { color: '#2D3748' }
+​                }
+​            }
+​        };
+
+​        function wrapLabel(label, maxWidth) {
+​            const words = label.toString().split(' ');
+​            let lines = [];
+​            let currentLine = words[0];
+
+​            for (let i = 1; i < words.length; i++) {
+​                if ((currentLine + ' ' + words[i]).length > maxWidth) {
+​                    lines.push(currentLine);
+​                    currentLine = words[i];
+​                } else {
+​                    currentLine += ' ' + words[i];
+​                }
+​            }
+​            lines.push(currentLine);
+​            return lines.length > 1 ? lines : label;
+​        }
+
+​        const processedLabels = data.years.map(label => wrapLabel(label, 16));
+
+​        new Chart(document.getElementById('goldPricedAssetsChart'), {
+​            type: 'line',
+​            data: {
+​                labels: processedLabels,
+​                datasets: [
+​                    {
+​                        label: '标普500 (盎司黄金)',
+​                        data: data.sp500PerGold,
+​                        borderColor: '#4299E1',
+​                        backgroundColor: 'rgba(66, 153, 225, 0.1)',
+​                        tension: 0.1,
+​                        borderWidth: 2,
+​                        pointRadius: 1,
+​                        fill: false,
+​                    },
+​                    {
+​                        label: 'WTI原油 (桶/盎司黄金)',
+​                        data: data.oilPerGold,
+​                        borderColor: '#48BB78',
+​                        backgroundColor: 'rgba(72, 187, 120, 0.1)',
+​                        tension: 0.1,
+​                        borderWidth: 2,
+​                        pointRadius: 1,
+​                        fill: false,
+​                    },
+​                    {
+​                        label: '铜 (磅/盎司黄金)',
+​                        data: data.copperPerGold,
+​                        borderColor: '#ED8936',
+​                        backgroundColor: 'rgba(237, 137, 54, 0.1)',
+​                        tension: 0.1,
+​                        borderWidth: 2,
+​                        pointRadius: 1,
+​                        fill: false,
+​                    },
+​                    {
+​                        label: '小麦 (蒲式耳/盎司黄金)',
+​                        data: data.wheatPerGold,
+​                        borderColor: '#ECC94B',
+​                        backgroundColor: 'rgba(236, 201, 75, 0.1)',
+​                        tension: 0.1,
+​                        borderWidth: 2,
+​                        pointRadius: 1,
+​                        fill: false,
+​                    }
+​                ]
+​            },
+​            options: {
+​                responsive: true,
+​                maintainAspectRatio: false,
+​                interaction: {
+​                    mode: 'index',
+​                    intersect: false,
+​                },
+​                scales: {
+​                    y: {
+​                        type: 'logarithmic',
+​                        ticks: {
+​                            color: '#A0AEC0',
+​                            callback: function(value, index, values) {
+​                                if (value === 1 || value === 10 || value === 100 || value === 1000) {
+​                                    return Number(value.toString());
+​                                }
+​                            }
+​                        },
+​                        grid: { color: '#4A5568' }
+​                    },
+​                    x: {
+​                        ticks: { color: '#A0AEC0' },
+​                        grid: { display: false }
+​                    }
+​                },
+​                plugins: chartTooltipCallback.plugins
+​            }
+​        });
+
+​        const smallChartOptions = {
+​            responsive: true,
+​            maintainAspectRatio: false,
+​            scales: {
+​                y: { display: false },
+​                x: { display: false }
+​            },
+​            plugins: {
+​                legend: { display: false },
+​                tooltip: {
+​                    enabled: true,
+​                    mode: 'index',
+​                    intersect: false,
+​                }
+​            }
+​        };
+
+​        new Chart(document.getElementById('oilChart'), {
+​            type: 'line',
+​            data: { labels: data.years, datasets: [{ data: data.oilPerGold, borderColor: '#48BB78', borderWidth: 2, pointRadius: 0, tension: 0.4 }] },
+​            options: smallChartOptions
+​        });
+
+​        new Chart(document.getElementById('copperChart'), {
+​            type: 'line',
+​            data: { labels: data.years, datasets: [{ data: data.copperPerGold, borderColor: '#ED8936', borderWidth: 2, pointRadius: 0, tension: 0.4 }] },
+​            options: smallChartOptions
+​        });
+
+​        new Chart(document.getElementById('wheatChart'), {
+​            type: 'line',
+​            data: { labels: data.years, datasets: [{ data: data.wheatPerGold, borderColor: '#ECC94B', borderWidth: 2, pointRadius: 0, tension: 0.4 }] },
+​            options: smallChartOptions
+​        });
+
+​        new Chart(document.getElementById('sp500Chart'), {
+​            type: 'line',
+​            data: { labels: data.years, datasets: [{ data: data.sp500PerGold, borderColor: '#4299E1', borderWidth: 2, pointRadius: 0, tension: 0.4 }] },
+​            options: smallChartOptions
+​        });
+
+​    </script>
+</body>
+</html>
