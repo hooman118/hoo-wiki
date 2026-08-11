@@ -65,7 +65,7 @@ def main():
             
             commit_msg = f"docs: sync batch #{batch_idx} ({current_size / 1024 / 1024:.1f}MB)"
             if run(f'git commit -m "{commit_msg}"'):
-                if not run("git push origin gh-pages"):
+                if not run("git push --progress origin gh-pages"):
                     print(f"❌ 第 {batch_idx} 批推送失败，脚本中断！", flush=True)
                     sys.exit(1)
                 print(f"✅ 第 {batch_idx} 批推送成功！", flush=True)
@@ -81,7 +81,7 @@ def main():
         
         commit_msg = f"docs: sync final batch ({current_size / 1024 / 1024:.1f}MB)"
         if run(f'git commit -m "{commit_msg}"'):
-            if not run("git push origin gh-pages"):
+            if not run("git push --progress origin gh-pages"):
                 print("❌ 最后一批推送失败！", flush=True)
                 sys.exit(1)
             print("✅ 最后一批推送成功！", flush=True)
