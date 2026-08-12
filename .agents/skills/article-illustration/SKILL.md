@@ -15,7 +15,7 @@ description: 文章自动配图生成与视觉风格管理规范。当用户要�
 
 | 风格名称 | 适用文章类型 | 核心视觉元素 | 基准参考图路径 |
 | :--- | :--- | :--- | :--- |
-| **小黑猫风格** | 【生命·修行】 / 【随笔】 | 木刻版画线条、暖色大留白背景、灵性小黑猫 | `zh/pages/writing/20260731_sleeping_cat.jpg`<br>`zh/pages/writing/cat_typhoon_umbrella.jpg` |
+| **小黑猫风格** | 【生命·修行】 / 【随笔】 | 萌呆大眼白眶黑猫、纯黑色躯干与边缘毛刺划线、高饱和暖黄纯色背景 | **核心基准参考图**：<br>`.agents/skills/article-illustration/resources/black-cat-original-reference.png`<br>*(辅助历史参考：`zh/pages/writing/cat_typhoon_umbrella.jpg`)* |
 | *(待扩充风格 B)* | 【科幻小说 / 方舟】 | *(后续根据需求新增)* | *(待定义)* |
 | *(待扩充风格 C)* | 【AI简史 / 科普】 | *(后续根据需求新增)* | *(待定义)* |
 
@@ -26,34 +26,34 @@ description: 文章自动配图生成与视觉风格管理规范。当用户要�
 当用户提及“**小黑猫风格**”或为【生命·修行】/【随笔】生成配图时，必须严格遵守以下原则：
 
 ### 🎨 视觉要素
-1. **艺术画风**：木刻版画 / 细腻黑线手绘风格（Linocut / Woodcut / Fine Line Art），保留质感黑线纹理。
-2. **色彩搭配**：高对比度纯色温暖底色（以暖黄色 `#E5AC24` / 鹅黄 / 静谧暗金为主），背景干净统一。
-3. **构图与留白**：
-   - **大面积留白**：主体猫咪在画面中的占比控制在 **25% ~ 35%** 左右，居于中央。
-   - **四周呼吸感**：四周保留极充裕、平整的大面积空白（Negative Space），衬托空灵、对峙与内省的叙事张力。
-4. **猫咪神态与动向**：
-   - 角色为纯黑亮泽小猫，根据文章情绪微调表情（如：蜷缩警惕、睁眼惶恐、沉思远眺、雨中打伞等）。
+1. **黑猫角色形象（以 `resources/black-cat-original-reference.png` 为风格基准）**：
+   - **大圆白眼与小黑瞳孔**：极其标志性的硕大、呆萌圆形白眼（Huge cartoonish round white circle eyes with small black pupils looking straight, up, or toward objects），神态逗趣、呆滞而富有灵性。
+   - **纯黑身躯与毛发小划线**：猫咪身体主体为高对比纯黑色（Solid jet-black body silhouette），边缘与侧背带有手绘细腻小短划线毛刺纹理（Sketchy fine hair stroke outlines along edges）。绝非普通虎斑纹理，亦非生硬几何块。
+2. **动作与场景高度匹配（Dynamic Pose Adaptability）**：
+   - **严禁固定半身或机械重复单一站姿**！猫咪的姿态必须根据具体的文章隐喻和场景情节进行**动态变化**（例如：在井边踮脚伸爪试探、雨中抓着伞飘浮、蜷缩成一圈、蹲伏在桌角、探头远眺等）。
+3. **色彩搭配与构图**：
+   - 高对比度纯色温暖金黄底色（Solid Vibrant Warm Yellow Background），背景平整干净，大面积留白（负空间占比 65%~75%），主体处于中央附近，呼吸感充裕。
 
 ### 🖼️ 图生图（Image-to-Image）生成规范
-为确保风格绝对一致，每次使用 `generate_image` 工具生成“小黑猫风格”配图时，**必须**在 `ImagePaths` 参数中传入至少 1~2 张基准参考图：
+为确保角色风格绝对一致，每次使用 `generate_image` 工具生成“小黑猫风格”配图时，**必须**在 `ImagePaths` 参数中将资源目录下的基准图传入：
 
 ```json
 "ImagePaths": [
-  "/Users/hooman/Work/Writing/hoo-wiki/zh/pages/writing/20260731_sleeping_cat.jpg",
-  "/Users/hooman/Work/Writing/hoo-wiki/zh/pages/writing/cat_typhoon_umbrella.jpg"
+  "/Users/hooman/Work/Writing/hoo-wiki/.agents/skills/article-illustration/resources/black-cat-original-reference.png"
 ]
 ```
 
 #### 标准 Prompt 模板：
 ```text
-Maintain the exact same linocut/woodcut black cat illustration style, fine line art texture, and solid warm yellow background color from the reference image. 
+Maintain the EXACT SAME black cat character design, goofy cartoonish wide round white eyes with tiny black pupils, solid pitch-black body with sketchy edge hair strokes, and solid warm yellow background color from black-cat-original-reference.png.
 
-Composition & Scaling:
-- Subject: A cute, sleek black cat positioned right in the dead center of the frame.
-- Scale & Margin: The cat is small in scale (occupying only ~30% of the canvas), surrounded by a vast amount of empty solid warm background with generous negative space and wide breathable margins.
+Dynamic Pose & Scene Integration:
+- The black cat's FULL BODY pose MUST interact dynamically with the scene (e.g., reaching paw towards the hanging water bucket, crouching at the well edge, floating with an umbrella, etc.). Do not use a static half-body crop unless requested.
+- Expression: Comical, curious, wide-eyed, bewildered.
 
-Expression & Emotion:
-- [在此描述具体的姿态与神态，例如：curled up tight with wide open expressive timid eyes, looking startled into the vast empty space.]
+Composition & Background:
+- Flat, solid vibrant warm yellow background, minimalist hand-drawn line art style.
+- Centered subject (~30% canvas size) with large breathable yellow negative space.
 ```
 
 ---
