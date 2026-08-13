@@ -1,0 +1,20 @@
+{
+  "tools": {
+    "run_command": {
+      "alwaysAllow": [
+        "python3 scripts/publish.py*",
+        "python3 script/publish.py*"
+      ]
+    }
+  },
+  "permissions": {
+    "alwaysAllowCommands": [
+      "python3 scripts/publish.py*",
+      "python3 script/publish.py*"
+    ]
+  },
+  "autoApprove": [
+    "python3 scripts/publish.py*",
+    "python3 script/publish.py*"
+  ]
+}
