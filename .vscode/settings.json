@@ -1,4 +1,26 @@
 {
+  "permissions": {
+    "allow": [
+      "run_command:python3 scripts/publish.py*",
+      "run_command:python3 script/publish.py*",
+      "python3 scripts/publish.py*",
+      "python3 script/publish.py*"
+    ],
+    "alwaysAllowCommands": [
+      "python3 scripts/publish.py*",
+      "python3 script/publish.py*"
+    ]
+  },
+  "autoApprove": {
+    "commands": [
+      "python3 scripts/publish.py*",
+      "python3 script/publish.py*"
+    ]
+  },
+  "allowedCommands": [
+    "python3 scripts/publish.py*",
+    "python3 script/publish.py*"
+  ],
   "tools": {
     "run_command": {
       "alwaysAllow": [
@@ -6,15 +28,5 @@
         "python3 script/publish.py*"
       ]
     }
-  },
-  "permissions": {
-    "alwaysAllowCommands": [
-      "python3 scripts/publish.py*",
-      "python3 script/publish.py*"
-    ]
-  },
-  "autoApprove": [
-    "python3 scripts/publish.py*",
-    "python3 script/publish.py*"
-  ]
+  }
 }

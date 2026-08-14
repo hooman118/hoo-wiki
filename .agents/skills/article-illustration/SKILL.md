@@ -64,8 +64,10 @@ Composition & Background:
 
 1. **文件规范重命名与移动**：
    将生成的临时图片复制并移动至 `zh/pages/writing/` 目录，命名格式为 `YYYYMMDD_<short_description>.jpg`。
-2. **自动嵌入 Markdown**：
-   在对应的 Markdown 文章顶部（或标题 `# Title` 正下方）插入标准 Markdown 引用：
+2. **根据上下文灵活性嵌入 Markdown**：
+   **严禁机械固定放在最顶部**。应根据配图意象所对应的文字节点与情感高潮决定嵌入位置：
+   - **文章最顶部**：适合全篇总括意象、开篇即出现的核验场景。
+   - **文章中段 / 文章末尾**：若配图承接文章后半段的叙事隐喻、思想升华或结尾余音（例如星空、流星雨、古老寓言等），**必须将配图置于对应的段落下方或文章最末尾**。
    ```markdown
    ![图片描述](YYYYMMDD_<short_description>.jpg)
    ```
