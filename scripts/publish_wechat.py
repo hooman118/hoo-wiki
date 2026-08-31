@@ -173,7 +173,8 @@ def convert_md_to_wechat_html(md_file, publisher=None):
         title = os.path.basename(md_file).replace('.md', '')
         md_body_text = md_text
     
-    clean_title = re.sub(r'【.*?】', '', title).strip() or title
+    # 仅移除【随笔】标签，保留【生命•故事】、【生命•修行】、【AI简史】等其他类别标签
+    clean_title = re.sub(r'^(\d{8})?【随笔】\s*', '', title).strip() or title
 
     # 2. 查找并替换本地图片链接，上传至微信
     thumb_media_id = None
