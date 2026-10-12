@@ -105,6 +105,7 @@
 ### 模块一：暗夜狂澜与三线交汇（2006 – 2012，建议第 54 – 58 篇）
 * **第 54 篇【双雄对决与改名求生 (1995–2005)】**：
   * Vapnik 与 LeCun 在贝尔实验室的较量；SVM 建立统治；AI 科学家改名“机器学习/模式识别”求生；CIFAR 守夜人联盟。
+  * 📌 **本篇专属写作参考与史料链接库详见**：[Article_54_Writing_Reference.md](file:///Users/hooman/Work/Writing/hoo-wiki/zh/pages/AI-History-Research/Article_54_Writing_Reference.md)
 * **第 55 篇【2006：云端的狂欢与暗夜的孤勇】**：
   * 主流 IT 界：AWS 云计算启航、初代 iPhone 诞生、IBM 秘密立项 Watson；
   * 暗夜三人行：老黄强推 CUDA 股价崩盘、李飞飞艰难启动 ImageNet、Hinton 发表 *Science* 论文为“深度学习”命名。
@@ -132,10 +133,15 @@
 * **第 67 篇**：2022.11.30 ChatGPT 静悄悄上线，2 个月破亿，人类科技史最快增长。
 * **第 68 篇**：多模态狂飙：Diffusion 图像生成、Sora 视频世界模型、GPT-4 多模态。
 
-### 模块五：推理范式、Agent 与 AGI 终局（2024 – 2026+，第 79 篇及以后）
+### 模块五：推理范式、Agent、存储墙与 AGI 终局（2024 – 2026+，第 79 篇及以后）
 * **第 69 篇**：Test-time Compute 推理范式革命（OpenAI o1/o3、DeepSeek R1：思维链与慢思考）。
-* **第 70 篇**：Agentic Workflows（智能体工作流）与具身智能（Embodied AI）。
-* **第 71 篇**：终局展望：重访三大学派大融合与通用人工智能（AGI）之路。
+* **第 70 篇**：Agentic 爆发与底层“存储/I/O 墙”（高并发 512B~4KB 随机 I/O 冲击传统 SSD 控制器，FDP、细粒度 ECC 与近存计算破局）。
+* **第 71 篇**：历史的奇妙螺旋：从 1995 年英伟达 NV1 曲面惨败，到现代空间世界模型（NeRF/3DGS/可微物理场）重夺“连续”。
+* **第 72 篇**：李飞飞的二次远征：从 ImageNet 到 World Labs（空间智能、大脑网格细胞与 3D 几何因果世界模型）。
+* **第 73 篇**：芯片与算法的“致命剪刀差”：流片周期（3年）vs 算法突变（6个月），Chiplet 芯粒解耦与软件定义硅片。
+* **第 74 篇**：终局展望：合成数据第一性原理、具身机器人制造闭环与三大学派（神经+符号+概率）的 AGI 会师。
+
+> 📌 **深度前沿研讨档案详见**：[Agentic_AI_Hardware_and_World_Models_Deep_Dive.md](file:///Users/hooman/Work/Writing/hoo-wiki/zh/pages/AI-History-Research/Agentic_AI_Hardware_and_World_Models_Deep_Dive.md)（深度拆解了底层存储主控、Chiplet 物理代价、NV1 哲学对比、李飞飞空间智能与脑科学硬件映射等前沿命题）。
 
 ---
 
