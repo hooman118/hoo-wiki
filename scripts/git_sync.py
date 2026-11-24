@@ -188,7 +188,8 @@ def main():
         sys.exit(2)
 
     log(f"🚀 正在推送到 GitHub 远程仓库 (origin/{branch})...")
-    push_res = subprocess.run(f"git push --progress origin {branch}", shell=True, text=True, capture_output=True)
+    # 增加 --no-thin 避免在 iCloud 云盘环境下因尝试复用脱机历史对象而触发 mmap 异常
+    push_res = subprocess.run(f"git push --no-thin --progress origin {branch}", shell=True, text=True, capture_output=True)
     
     if push_res.returncode == 0:
         log("🎉 Git 同步成功！全部提交已安全推送到 GitHub！")
