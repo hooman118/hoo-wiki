@@ -13,6 +13,7 @@ import os
 import sys
 import re
 import json
+import subprocess
 import requests
 import markdown
 
@@ -44,17 +45,23 @@ class WeChatPublisher:
             raise Exception(f"获取微信 AccessToken 失败: {res}")
 
     def upload_material_image(self, img_path):
-        """上传图片至微信永久素材库获取 URL / media_id"""
+        """上传图片至微信永久素材库获取 URL / media_id（带自动重试）"""
         if not self.access_token:
             self.get_access_token()
         url = f"https://api.weixin.qq.com/cgi-bin/material/add_material?access_token={self.access_token}&type=image"
-        with open(img_path, "rb") as f:
-            files = {"media": f}
-            res = requests.post(url, files=files).json()
-        if "url" in res:
-            return res["url"], res.get("media_id")
-        else:
-            raise Exception(f"上传图片素材失败 {img_path}: {res}")
+        last_err = None
+        for attempt in range(3):
+            try:
+                with open(img_path, "rb") as f:
+                    files = {"media": f}
+                    res = requests.post(url, files=files, timeout=30).json()
+                if "url" in res:
+                    return res["url"], res.get("media_id")
+                raise Exception(f"上传图片素材失败 {img_path}: {res}")
+            except requests.exceptions.RequestException as e:
+                last_err = e
+                print(f"⚠️ 上传图片网络抖动，正在第 {attempt + 2} 次重试...")
+        raise last_err
 
     def add_draft(self, title, content_html, thumb_media_id=None, digest=""):
         """向草稿箱添加文章"""
@@ -159,6 +166,61 @@ def apply_doocs_inline_styles(html_body):
 
     return f'<section style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif; font-size: 18px; color: #2b2b2b; line-height: 1.85; padding: 10px;">\n{html_body}\n</section>'
 
+def render_math_via_node(math_items):
+    """调用 scripts/render_math.js (MathJax) 将 LaTeX 公式批量转为自包含内联 SVG"""
+    if not math_items:
+        return []
+    script_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "render_math.js")
+    if not os.path.exists(script_path):
+        raise FileNotFoundError(f"找不到公式渲染脚本: {script_path}")
+    proc = subprocess.run(
+        ["node", script_path],
+        input=json.dumps(math_items, ensure_ascii=False),
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+    return json.loads(proc.stdout)
+
+def extract_math_placeholders(md_text):
+    """提取并保护 $$...$$ 与 $...$ 公式，避免被 markdown 解析器破坏"""
+    code_blocks = []
+    def save_code(match):
+        idx = len(code_blocks)
+        code_blocks.append(match.group(0))
+        return f"CODETOKEN{idx}END"
+
+    protected = re.sub(r'```[\s\S]*?```|`[^`\n]+`', save_code, md_text)
+    math_items = []
+
+    def add_math(formula, display):
+        idx = len(math_items)
+        math_items.append({"tex": formula.strip(), "display": display})
+        return f"MATHTOKEN{idx}END"
+
+    # 1. 独占一行的 $$...$$ 作为块级居中公式
+    def replace_block_math(match):
+        return add_math(match.group(1), True)
+
+    protected = re.sub(r'(?m)^[ \t]*\$\$([\s\S]+?)\$\$[ \t]*$', replace_block_math, protected)
+
+    # 2. 行内出现的 $$...$$（如夹在句子中间）按行内公式渲染，避免打断段落
+    def replace_inline_double_math(match):
+        return add_math(match.group(1), False)
+
+    protected = re.sub(r'\$\$([^\n]+?)\$\$', replace_inline_double_math, protected)
+
+    # 3. 标准行内 $...$ 公式
+    def replace_inline_math(match):
+        return add_math(match.group(1), False)
+
+    protected = re.sub(r'(?<!\\)\$([^\n$]+?)(?<!\\)\$', replace_inline_math, protected)
+
+    for idx, code in enumerate(code_blocks):
+        protected = protected.replace(f"CODETOKEN{idx}END", code)
+
+    return protected, math_items
+
 def convert_md_to_wechat_html(md_file, publisher=None):
     base_dir = os.path.dirname(md_file)
     with open(md_file, "r", encoding="utf-8") as f:
@@ -195,18 +257,29 @@ def convert_md_to_wechat_html(md_file, publisher=None):
 
     md_text_processed = re.sub(r'!\[(.*?)\]\((.*?)\)', replace_img, md_body_text)
 
-    # 3. 转换外部链接为 Doocs 微信标准脚注
+    # 3. 提取并保护 LaTeX 公式
+    md_text_processed, math_items = extract_math_placeholders(md_text_processed)
+
+    # 4. 转换外部链接为 Doocs 微信标准脚注
     md_text_processed, footnote_html = process_links_to_footnotes(md_text_processed)
 
-    # 4. 使用 markdown 转换 HTML
+    # 5. 使用 markdown 转换 HTML
     html_body = markdown.markdown(md_text_processed, extensions=['tables', 'fenced_code', 'nl2br'])
-    
-    # 5. 应用 Doocs 行内样式注入（直接挂载到每个 HTML 元素的 style 属性，微信不再被洗掉）
-    full_html = apply_doocs_inline_styles(html_body) + footnote_html
-    
-    # 提炼摘要 (前100字纯文本)
-    plain_text = re.sub(r'<[^>]+>', '', html_body).strip()
+
+    # 6. 提炼摘要 (剥离公式占位符与 HTML 标签后的前100字纯文本)
+    plain_for_digest = re.sub(r'MATHTOKEN\d+END', '', html_body)
+    plain_text = re.sub(r'<[^>]+>', '', plain_for_digest).strip()
     digest = plain_text[:100].replace('\n', ' ')
+
+    # 7. 应用 Doocs 行内样式注入（直接挂载到每个 HTML 元素的 style 属性，微信不再被洗掉）
+    full_html = apply_doocs_inline_styles(html_body) + footnote_html
+
+    # 8. 批量渲染并回填 MathJax SVG 公式
+    if math_items:
+        print(f"📐 正在渲染 {len(math_items)} 个 LaTeX 公式为微信兼容 SVG...")
+        rendered_svgs = render_math_via_node(math_items)
+        for idx, svg_html in enumerate(rendered_svgs):
+            full_html = full_html.replace(f"MATHTOKEN{idx}END", svg_html)
 
     return clean_title, full_html, thumb_media_id, digest
 
